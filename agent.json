@@ -1,0 +1,40 @@
+{
+  "schema": "ubic/agent-card/v1",
+  "name": "MedXpert 医械法规翻译助手",
+  "description": "Medical device regulatory document translator. Read-only MCP tools for terminology lookup across NMPA/FDA/MDR/Japan PMDA — NOT a general translator. Audit-traceable, conservative translation stance.",
+  "protocol": "MCP",
+  "provider": {
+    "organization": "MedXpert",
+    "url": "https://medxpert.cn"
+  },
+  "author": "MedXpert (org) · operated by SynomosAI governance line",
+  "capabilities": [
+    "medical device translator",
+    "regulatory terminology",
+    "NMPA FDA MDR translation",
+    "法规翻译",
+    "术语库"
+  ],
+  "keywords": [
+    "medical device translator",
+    "regulatory terminology",
+    "NMPA FDA MDR translation",
+    "法规翻译",
+    "术语库"
+  ],
+  "auth": {
+    "mode": "none",
+    "note": "read-only, no credentials required"
+  },
+  "transport": {
+    "type": "stdio",
+    "command": "python",
+    "args": [
+      "server.py"
+    ]
+  },
+  "homepage": "https://medxpert.cn",
+  "license": "MIT",
+  "installByConsent": "AI may request install; human approves (A3 Law II)",
+  "scope": "regulatory knowledge query — not legal/clinical advice"
+}
