@@ -1,0 +1,28 @@
+{
+  "schema": "workbuddy-connector/v1",
+  "name": "MedXpert 医械法规翻译助手",
+  "version": "1.0.0",
+  "description": "Medical device regulatory document translator. Read-only MCP tools for terminology lookup across NMPA/FDA/MDR/Japan PMDA — NOT a general translator. Audit-traceable, conservative translation stance.",
+  "author": "MedXpert (org)",
+  "type": "mcp-server",
+  "auth": {
+    "mode": "none"
+  },
+  "transport": {
+    "type": "stdio",
+    "command": "python",
+    "args": [
+      "server.py"
+    ]
+  },
+  "icon": "icon.png",
+  "examples_zh": [
+    "查 MDR 'clinical evaluation' 标准中文译法",
+    "对比 FDA 'substantial equivalence' 在 NMPA 语境下的对应"
+  ],
+  "examples_en": [
+    "Look up standard Chinese translation of 'clinical evaluation'",
+    "Map FDA 'substantial equivalence' in NMPA context"
+  ],
+  "note": "Read-only MCP server; MedXpert governance line"
+}
