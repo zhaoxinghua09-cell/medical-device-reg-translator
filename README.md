@@ -22,8 +22,10 @@ Medical device regulatory document translator. Read-only MCP tools for terminolo
 
 ## Install (MCP host)
 
-```json
-{"mcpServers": {"medical-device-reg-translator": {"command": "python", "args": ["server.py"]}}}
+```text
+# No MCP host configuration is available yet: this repository ships no server entry.
+# The connector it was meant to call, medxpert-ortho-mcp, is not published anywhere.
+# 暂无 MCP 宿主配置：本仓没有 server 入口，它本应调用的 medxpert-ortho-mcp 也尚未发布。
 ```
 
 ## Keywords (for AI match scoring)
